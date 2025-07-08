@@ -1,5 +1,5 @@
 {
-  "name": "agent-next-boilerplate",
+  "name": "aave-medic",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,24 +11,25 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@bitte-ai/agent-sdk": "^0.2.1",
+    "@bitte-ai/agent-sdk": "^0.2.3",
+    "@safe-global/protocol-kit": "^6.1.0",
     "next": "^15.3.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "redoc": "^2.5.0",
     "vercel-url": "^0.2.8",
-    "viem": "^2.31.3",
-    "zod": "^3.25.67"
+    "viem": "^2.31.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
+    "@safe-global/types-kit": "^3.0.0",
     "@types/node": "^24.0.3",
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
+    "@types/react": "18.2.0",
+    "@types/react-dom": "18.2.0",
     "concurrently": "^9.1.2",
     "eslint": "^9.29.0",
     "eslint-config-next": "^15.3.4",
-    "make-agent": "^0.3.4",
+    "make-agent": "^0.3.5",
     "typescript": "5.8.3"
   }
 }
