@@ -8,11 +8,10 @@ import {
   encodeFunctionData,
   stringToHex,
 } from 'viem';
-import { MODULE_PROXY_FACTORY, ROLES_V2_MODULE_MASTERCOPY } from './addresses';
 import { MODULE_PROXY_FACTORY_ABI, ROLES_V2_MODULE_ABI } from './abi';
-import { ConditionFlat } from './types';
+import { MODULE_PROXY_FACTORY, ROLES_V2_MODULE_MASTERCOPY } from './addresses';
 import { ExecutionOptions } from './enums';
-import type { MetaTransaction } from '@bitte-ai/types';
+import { ConditionFlat, MetaTransaction } from './types';
 
 const PROXY_BYTECODE_PREFIX = '0x602d8060093d393df3363d3d373d3d3d363d73';
 const PROXY_BYTECODE_SUFFIX = '5af43d82803e903d91602b57fd5bf3';
@@ -76,8 +75,8 @@ export function buildDeployModuleTx(
   return { to, value: '0x0', data };
 }
 
-export function encodeRoleKey(roleKey: string): Hex {
-  return keccak256(stringToHex(roleKey));
+export function encodeRoleKey(role: string): Hex {
+  return keccak256(stringToHex(role));
 }
 
 export function buildAllowTargetTx(
